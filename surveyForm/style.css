@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-image: url("annie-spratt-QckxruozjRg-unsplash.jpg");
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(108, 108, 106, 0.6);
+}
+
+#title {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+#title h1 {
+  font-weight: normal;
+  text-align: center;
+}
+
+#title p {
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+#survey-form {
+  background-color: rgba(39, 39, 71, 0.9);
+  margin: 0 auto;
+  width: 50%;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#survey-form .label {
+  display: flex;
+  flex-direction: column;
+}
+
+#survey-form .label > label {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+#survey-form .label > input,
+#survey-form .label > select {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#survey-form .buttons-checkboxes {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin: 5px 5px 5px 0;
+  font-size: 18px;
+}
+
+#survey-form .buttons-checkboxes input[type="checkbox"],
+#survey-form .buttons-checkboxes input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+#survey-form .buttons-checkboxes > input {
+  margin-right: 10px;
+}
+
+#survey-form #improved {
+  color: white;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#survey-form #improved span {
+  font-size: 15px;
+}
+
+#survey-form #feature {
+  margin-bottom: 10px;
+}
+
+#survey-form textarea {
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  resize: vertical;
+}
+
+#survey-form #submit {
+  margin-top: 30px;
+}
+
+#survey-form #submit button {
+  width: 100%;
+  font-size: 18px;
+  padding: 15px;
+  color: white;
+  background-color: #36af65;
+}
+
+@media (max-width: 1000px) {
+  #survey-form {
+    width: 70%;
+  }
+}

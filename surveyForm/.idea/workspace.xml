@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d4dfc81-c074-49dd-8eee-16467a9da685" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/annie-spratt-QckxruozjRg-unsplash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tributePage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tributePage/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +32,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/surveyForm/index.html" useBuiltInWebServerPort="true">
@@ -51,7 +60,9 @@
       <updated>1607281073657</updated>
       <workItem from="1607281074923" duration="6000" />
       <workItem from="1607281101811" duration="73000" />
-      <workItem from="1607281798340" duration="3508000" />
+      <workItem from="1607281798340" duration="3548000" />
+      <workItem from="1607286482182" duration="77000" />
+      <workItem from="1607296195505" duration="5666000" />
     </task>
     <servers />
   </component>
