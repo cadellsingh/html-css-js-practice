@@ -1,8 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+:root {
+  --facebook-color: #4267b2;
+  --instagram-color: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  --twitter-color: #00acee;
+  --youtube-color: #ff0000;
+  --text-color: hsl(228, 34%, 66%);
+  --bg-card: hsl(228, 28%, 20%);
+}
+
 body {
   font-family: Inter;
-  background-color: lightblue;
+  background-color: hsl(230, 17%, 14%);
 }
 
 * {
@@ -14,7 +31,6 @@ body {
 .grid-container {
   display: grid;
   width: 80%;
-  background-color: green;
   margin: 0 auto;
   grid-template-columns: 1fr;
   padding: 30px 0;
@@ -22,19 +38,20 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
-header #dashboard h2 {
+header h2 {
   color: white;
   font-size: 30px;
 }
 
-header #dashboard p {
-  color: hsl(228, 34%, 66%);
-}
-
-header #theme {
-  margin: auto 0 auto auto;
+header p {
+  color: var(--text-color);
+  font-size: 13px;
+  margin-top: 3px;
+  letter-spacing: 1px;
 }
 
 article {
@@ -44,10 +61,93 @@ article {
 }
 
 article .social-media {
-  padding: 30px;
-  background-color: yellow;
-  border: 2px solid black;
+  padding: 45px 0;
+  background-color: var(--bg-card);
+  border-radius: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook {
+  border-top: 5px solid var(--facebook-color);
+}
+
+.fa-facebook-square {
+  color: var(--facebook-color);
+}
+
+.twitter {
+  border-top: 5px solid var(--twitter-color);
+}
+
+.fa-twitter {
+  color: var(--twitter-color);
+}
+
+.instagram {
+  border-top: 5px solid;
+  border-image-source: var(--instagram-color);
+  border-image-slice: 1;
+}
+
+.fa-instagram {
+  background: var(--instagram-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.youtube {
+  border-top: 5px solid var(--youtube-color);
+}
+
+.fa-youtube {
+  color: var(--youtube-color);
+}
+
+article .social-handle,
+.today-stat {
+  display: flex;
+  justify-content: center;
+}
+
+article .social-handle i,
+article .today-stat i {
+  margin-top: auto;
+  margin-right: 5px;
+}
+
+article .social-media .social-handle p {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+article .social-media p:nth-last-of-type(2) {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+article .social-media p:nth-child(2n + 1) {
+  color: var(--text-color);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+article .today-stat {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.positive {
+  color: #29ab87;
+}
+
+.negative {
+  color: #b22222;
 }
 
 #details {
@@ -57,11 +157,37 @@ article .social-media {
   grid-gap: 15px;
 }
 
+section h3 {
+  font-size: 20px;
+  color: white;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
 .social-media-details {
-  /* padding: 10px; */
-  background-color: yellow;
-  border: 2px solid black;
+  padding: 30px 0;
+  background-color: var(--bg-card);
+  border-radius: 5px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.social-media-details p:nth-child(1) {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.social-media-details p:nth-child(3) {
+  color: white;
+  font-size: 30px;
+}
+
+.social-media-details .today-stat {
+  vertical-align: m;
+}
+
+.social-media-details .today-stat i {
+  margin-right: 5px;
 }
